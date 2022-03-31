@@ -36,7 +36,7 @@ add_library(${PROJECT_NAME}_MAIN ${MAIN_SOURCES})
 set_target_properties(${PROJECT_NAME}_MAIN PROPERTIES PUBLIC_HEADER MAIN_INCLUDES_DIR)
 
 # Link Libraries
-target_include_directories(${PROJECT_NAME}_MAIN PRIVATE ${MAIN_INCLUDE_DIRS})
+target_include_directories(${PROJECT_NAME}_MAIN PUBLIC ${MAIN_INCLUDE_DIRS})
 target_link_libraries(${PROJECT_NAME}_MAIN PRIVATE ${MAIN_LIBRARIES})
 
 #pico_enable_stdio_usb(${PROJECT_NAME}_MAIN 1)

@@ -29,6 +29,9 @@ list(APPEND TEST_LIBRARIES pico_stdlib)
 #list(APPEND TEST_LIBRARIES hardware_flash)
 #list(APPEND TEST_LIBRARIES hardware_sync)
 
+list(APPEND TEST_LIBRARIES LiquidCrystal_MAIN)
+list(APPEND TEST_INCLUDE_DIRS ${ROOT_DIR}/main/include)
+
 # Create Executable File
 include_directories(${TEST_INCLUDES_DIR})
 add_executable(${PROJECT_NAME}_TEST ${TEST_SOURCES})

@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.12)
 
 ###### Change this attributs
 
-set(PROJECT_NAME PROJECT_EXAMPLE)
+set(PROJECT_NAME LiquidCrystal)
 
 ######
 
