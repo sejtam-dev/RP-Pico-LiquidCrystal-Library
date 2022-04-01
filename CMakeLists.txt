@@ -16,7 +16,9 @@ set(ROOT_DIR ${CMAKE_CURRENT_LIST_DIR})
 message("= Root Directory: ${ROOT_DIR}")
 message("=")
 
-include(${ROOT_DIR}/3rdparty/pico-sdk/pico_sdk_init.cmake)
+if(NOT COMMAND pico_sdk_init)
+    include(${ROOT_DIR}/3rdparty/pico-sdk/pico_sdk_init.cmake)
+endif()
 
 project(${PROJECT_NAME} C CXX ASM)
 
